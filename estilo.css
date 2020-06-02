@@ -1,0 +1,124 @@
+/*
+Configuración general.
+*/
+
+input{
+    width:200px;
+    margin-bottom:5px;
+    -webkit-border-radius: 8px;
+    border: 2px solid grey;
+}
+input:focus{
+    border:2px solid blue;
+    background-color:#c5eef1;
+}
+
+button{
+    -webkit-border-radius: 8px;
+    margin-bottom:5px;
+    background-color: white;
+}
+button:hover{
+    
+  background-color: #faf9be;
+    
+}
+
+hr{
+    width: 200px;
+    margin:auto;
+    margin-bottom:10px
+}
+
+/*Configuración del área superior*/
+
+#superior{
+	background-color: red;
+	width: 270px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 8px;
+    border: 2px solid #b4050a;
+}
+
+#tarea{
+    width:150px;
+    margin-top:5px;
+    margin-left: 60px;
+}
+#superior input{
+    margin-left: 35px;
+}
+#guarda{
+    width: 100px;
+    margin-left:39px    
+}
+#cancela{
+    width: 100px;
+}
+#guarda:hover {
+  background-color: #3e8e41;
+}
+#cancela:hover {
+  background-color: #3e8e41;
+}
+/*Configuración del área inferior*/
+
+#inferior{
+	background-color: blue;
+	width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 8px;
+    /*Si se comenta la línea de abajo,
+    desaparecerán los bordes, pero también la barra
+    azul de cuando no haya tareas
+    */
+    border: 2px solid #0000b9;
+}
+
+#inferior button {
+  cursor: pointer;
+  display: block;
+  width: 200px;
+  margin-left:35px;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
+#inferior input{
+    margin-top: 5px;
+    margin-left:35px;
+}
+
+#inferior #edEliminar{    
+  width: 80px;
+  display:inline;
+  margin-left:19px;
+}
+#inferior #edCancelar{    
+  width: 80px;
+  display:inline;
+  margin-left:0px;
+}
+#inferior #edGuardar{    
+  width: 80px;
+  display:inline;
+  margin-left:0px;
+}
+
+#inferior #edGuardar:hover{
+  background-color: #3e8e41;
+}
+#inferior #edCancelar:hover{
+  background-color: #3e8e41;
+}
+#inferior #edEliminar:hover{
+  background-color: #3e8e41;
+}
+/*
+#inferior button:not(:last-child) {
+  border-bottom: none;
+}
+*/
