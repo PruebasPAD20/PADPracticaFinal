@@ -12,8 +12,8 @@
     {
       "src": "maskable_icon.png",
       "sizes": "512x512",
-      "type": "image/png",
-    },
+      "type": "image/png"
+    }
   ],
   "start_url": "/?source=pwa",
   "background_color": "#26AF31",
