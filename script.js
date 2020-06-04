@@ -233,10 +233,11 @@ function pruebas(text){
 	alert(text.id);
 }
 
+btnTarea.onclick = function(){if(creandoTarea==false){nuevaTarea()}};
 cargarSW();
 instalarSW();
 devolYCache();
-btnTarea.onclick = function(){if(creandoTarea==false){nuevaTarea()}};
+
 cargaTareas();
 
 /* Adds Element BEFORE NeighborElement */
