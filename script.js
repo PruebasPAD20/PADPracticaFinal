@@ -5,7 +5,7 @@ var editantoTarea = false;
 var tarea = false;
 
 
-function cargarSW(){
+
 	// si nuestro navegador ejecuta service workers
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
@@ -16,9 +16,9 @@ function cargarSW(){
             })
         })
     }
-}
 
-function instalarSW(){
+
+
 	var CACHE_NAME = 'pad-cache-v1';
 	var urlsToCache = [
 		'/',
@@ -38,9 +38,9 @@ function instalarSW(){
 		  })
 	  );
 	});
-}
 
-function devolYCache(){
+
+
 	self.addEventListener('fetch', function(event) {
 		event.respondWith(
 			caches.match(event.request)
@@ -80,7 +80,7 @@ function devolYCache(){
 			})
 		);
 	});
-}
+
 	
 function cargaTareas(){
 	if(localStorage.getItem('tareas')){
@@ -233,11 +233,8 @@ function pruebas(text){
 	alert(text.id);
 }
 
-btnTarea.onclick = function(){if(creandoTarea==false){nuevaTarea()}};
-cargarSW();
-instalarSW();
-devolYCache();
 
+btnTarea.onclick = function(){if(creandoTarea==false){nuevaTarea()}};
 cargaTareas();
 
 /* Adds Element BEFORE NeighborElement */
