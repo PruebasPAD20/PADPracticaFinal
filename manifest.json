@@ -2,7 +2,14 @@
   "short_name": "PAD",
   "name": "PAD Practica Final",
   "description": "Práctica final de la asignatura de PAD",
-  "icons": [ ],
+  "icons": [
+    {
+      "src": "maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
   "start_url": "/",
   "background_color": "#26AF31",
   "display": "standalone",
