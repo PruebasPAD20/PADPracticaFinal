@@ -1,4 +1,3 @@
-{
   "short_name": "PAD",
   "name": "PAD Practica Final",
   "description": "Práctica final de la asignatura de PAD",
@@ -7,4 +6,3 @@
   "background_color": "#26AF31",
   "display": "standalone",
   "scope": "/"
-}
