@@ -1,10 +1,10 @@
 {
   "short_name": "PAD",
   "name": "PAD Practica Final",
-  "description": "Pr·ctica final de la asignatura de PAD",
+  "description": "Pr√°ctica final de la asignatura de PAD",
   "icons": [ ],
   "start_url": "/",
   "background_color": "#26AF31",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/"
 }
