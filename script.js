@@ -4,6 +4,17 @@ var creandoTarea = false;
 var editantoTarea = false;
 var tarea = false;
 
+// si nuestro navegador ejecuta service workers
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('script.js').then(reg => {
+                console.log('Todo bien:', reg)
+            }, function (err) {
+                console.log('Fallo:', err)
+            })
+        })
+    }
+	
 function cargaTareas(){
 	if(localStorage.getItem('tareas')){
 		tareas = localStorage.getItem('tareas');
@@ -67,7 +78,7 @@ function nuevaTarea(){
 
 function guardarTarea(tarea){
 	if(tarea.length === 0 || tarea.trim().length === 0){
-		alert("Campo de tarea vacío");
+		alert("Campo de tarea vacÃ­o");
 	}
 	else{
 		//console.log(tarea);
