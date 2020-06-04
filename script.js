@@ -7,7 +7,7 @@ var tarea = false;
 // si nuestro navegador ejecuta service workers
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('script.js').then(reg => {
+            navigator.serviceWorker.register('/script.js').then(reg => {
                 console.log('Todo bien:', reg)
             }, function (err) {
                 console.log('Fallo:', err)
