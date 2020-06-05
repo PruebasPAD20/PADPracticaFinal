@@ -1,4 +1,4 @@
-var btnTarea =  document.getElementById("tarea");
+var btnTarea =  getElementById("tarea");
 var tareas = [];
 var creandoTarea = false;
 var editantoTarea = false;
