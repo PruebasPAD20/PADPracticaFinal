@@ -8,14 +8,16 @@ var tarea = false;
 function cargarSW(){
 	// si nuestro navegador ejecuta service workers
     if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('./script.js').then(reg => {
-                console.log('Todo bien:', reg)
-            }, function (err) {
-                console.log('Fallo:', err)
-            })
-        })
-    }
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./script.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
 }
 
 function instalarSW(){
