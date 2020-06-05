@@ -21,11 +21,11 @@ function cargarSW(){
 function instalarSW(){
 	var CACHE_NAME = 'pad-cache-v1';
 	var urlsToCache = [
-		'./',
-		'./index.html',
-		'./estilo.css',
-		'./script.js',
-		'./manifest.json'
+		'/',
+		'/index.html',
+		'/estilo.css',
+		'/script.js',
+		'/manifest.json'
 	];
 
 	self.addEventListener('install', function(event) {
