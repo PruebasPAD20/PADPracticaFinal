@@ -9,7 +9,7 @@ function cargarSW(){
 	// si nuestro navegador ejecuta service workers
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/script.js').then(reg => {
+            navigator.serviceWorker.register('./script.js').then(reg => {
                 console.log('Todo bien:', reg)
             }, function (err) {
                 console.log('Fallo:', err)
@@ -21,11 +21,11 @@ function cargarSW(){
 function instalarSW(){
 	var CACHE_NAME = 'pad-cache-v1';
 	var urlsToCache = [
-		'/',
-		'/index.html',
-		'/estilo.css',
-		'/script.js',
-		'/manifest.json'
+		'./',
+		'./index.html',
+		'./estilo.css',
+		'./script.js',
+		'./manifest.json'
 	];
 
 	self.addEventListener('install', function(event) {
