@@ -1,4 +1,3 @@
-var btnTarea =  document.getElementById("tarea");
 var tareas = [];
 var creandoTarea = false;
 var editantoTarea = false;
@@ -236,6 +235,7 @@ function pruebas(text){
 cargarSW();
 instalarSW();
 devolYCache();
+var btnTarea =  document.getElementById("tarea");
 btnTarea.onclick = function(){if(creandoTarea==false){nuevaTarea()}};
 cargaTareas();
 
