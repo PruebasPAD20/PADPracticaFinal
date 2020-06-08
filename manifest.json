@@ -4,13 +4,13 @@
   "description": "Práctica final de la asignatura de PAD",
   "icons": [
     {
-      "src": "maskable_icon.png",
+      "src": "./maskable_icon.png",
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "maskable_icon.png",
+      "src": "./maskable_icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
