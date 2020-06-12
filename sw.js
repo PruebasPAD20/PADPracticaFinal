@@ -32,7 +32,7 @@ self.addEventListener('install', function(event) {
 });
 
 
-
+//solicitudes de devolución y caché
 self.addEventListener('fetch', function(event) {
 	event.respondWith(
 		caches.match(event.request)
