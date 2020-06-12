@@ -11,7 +11,6 @@ function cargaTareas(){
 	}
 	else{
 		localStorage.setItem('tareas', JSON.stringify(tareas));
-		//alert("nohay");
 	}
 	
 	var contenedor = document.getElementById("inferior");
@@ -31,7 +30,6 @@ function cargaTareas(){
 		btn.innerHTML = tareas[i];
 		btn.id = "boton"+i;
 		btn.onclick = function(){editarTarea(this)};
-		//console.log(btn.id);
 		contenedor.appendChild(btn);
 		if(i < tareas.length - 1)
 			contenedor.appendChild(document.createElement("hr"));
@@ -70,7 +68,6 @@ function guardarTarea(tarea){
 		alert("Campo de tarea vacío");
 	}
 	else{
-		//console.log(tarea);
 		tareas.push(tarea);
 		cancelarNueva();
 		localStorage.setItem('tareas', JSON.stringify(tareas));
@@ -87,7 +84,6 @@ function cancelarNueva(){
 
 function editarTarea(boton){
 	if(editantoTarea){
-		//document.getElementById("edCancelar").onclick;
 		cancelaEditar(tarea);
 	}
 	
@@ -158,12 +154,12 @@ function pruebas(text){
 btnTarea.onclick = function(){if(creandoTarea==false){nuevaTarea()}};
 cargaTareas();
 
-/* Adds Element BEFORE NeighborElement */
+/* añade el elemento antes del elemento vecino */
 Element.prototype.colocarAntes = function(element) {
   element.parentNode.insertBefore(this, element);
 }, false;
 
-/* Adds Element AFTER NeighborElement */
+/* añade el elemento después del elemento vecino */
 Element.prototype.colocarDespues = function(element) {
   element.parentNode.insertBefore(this, element.nextSibling);
 }, false;
