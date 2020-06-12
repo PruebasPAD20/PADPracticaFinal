@@ -45,6 +45,7 @@ function nuevaTarea(){
 	var texto = document.createElement("input");
 	texto.type="text";
 	texto.id="texto";
+	texto.select();
 	
 	var guardar = document.createElement("button");
 	guardar.innerHTML="Guardar";
@@ -94,6 +95,7 @@ function editarTarea(boton){
 	tTarea.type="text";
 	tTarea.id="edTexto";
 	tTarea.placeholder=boton.innerHTML;
+	tTarea.select();
 	
 	var eTarea = document.createElement("button");
 	eTarea.innerHTML="Eliminar";
