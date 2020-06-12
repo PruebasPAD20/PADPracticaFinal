@@ -45,7 +45,6 @@ function nuevaTarea(){
 	var texto = document.createElement("input");
 	texto.type="text";
 	texto.id="texto";
-	texto.select();
 	
 	var guardar = document.createElement("button");
 	guardar.innerHTML="Guardar";
@@ -60,6 +59,7 @@ function nuevaTarea(){
 	contenedor.appendChild(texto);
 	contenedor.appendChild(guardar);
 	contenedor.appendChild(cancelar);
+	texto.select();
 	
 	creandoTarea=true;
 }
@@ -95,7 +95,6 @@ function editarTarea(boton){
 	tTarea.type="text";
 	tTarea.id="edTexto";
 	tTarea.placeholder=boton.innerHTML;
-	tTarea.select();
 	
 	var eTarea = document.createElement("button");
 	eTarea.innerHTML="Eliminar";
@@ -118,6 +117,8 @@ function editarTarea(boton){
 	cTarea.colocarDespues(boton);
 	eTarea.colocarDespues(boton);
 	tTarea.colocarDespues(boton);
+	
+	tTarea.select();
 }
 
 function eliminarTarea(id){
